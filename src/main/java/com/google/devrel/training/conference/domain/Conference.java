@@ -9,6 +9,7 @@ import com.google.common.base.Preconditions;
 import com.google.common.collect.ImmutableList;
 import com.google.devrel.training.conference.form.ConferenceForm;
 import com.googlecode.objectify.Key;
+import com.googlecode.objectify.annotation.Cache;
 import com.googlecode.objectify.annotation.Entity;
 import com.googlecode.objectify.annotation.Id;
 import com.googlecode.objectify.annotation.Index;
@@ -22,6 +23,7 @@ import java.util.List;
  * Conference class stores conference information.
  */
 @Entity
+@Cache
 public class Conference {
 
     private static final String DEFAULT_CITY = "Default City";
