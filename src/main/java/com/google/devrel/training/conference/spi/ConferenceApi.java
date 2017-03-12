@@ -159,6 +159,7 @@ public class ConferenceApi {
         final long conferenceId = conferenceKey.getId();//        
         
         // Get default queue
+        //final Queue queue = QueueFactory.getQueue("email");
         final Queue queue = QueueFactory.getDefaultQueue();
         
         Conference conference = ofy().transact(new Work<Conference>(){
